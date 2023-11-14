@@ -1,7 +1,7 @@
 {
     "name": "@temple-wallet/jest-webextension-mock",
-    "version": "4.0.0",
-    "description": "Mock the components of a WebExtension",
+    "version": "4.1.0",
+    "description": "A copy of @serh11p/jest-webextension-mock with some added methods",
     "main": "dist/setup.js",
     "module": "src/setup.js",
     "author": "Serhii Pashchenko (serh11p.com)",
