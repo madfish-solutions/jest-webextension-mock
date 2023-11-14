@@ -48,4 +48,5 @@ export const runtime = {
     return path;
   }),
   openOptionsPage: jest.fn(),
+  getManifest: jest.fn(() => ({})),
 };
