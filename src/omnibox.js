@@ -1,6 +1,6 @@
 // https://developer.chrome.com/extensions/omnibox
 
-export const omnibox = {
+const omnibox = {
   setDefaultSuggestion: jest.fn(),
   onInputStarted: {
     addListener: jest.fn(),
@@ -15,3 +15,5 @@ export const omnibox = {
     addListener: jest.fn(),
   },
 };
+
+module.exports = { omnibox };

@@ -1,5 +1,5 @@
-export let onMessageListeners = [];
-export const runtime = {
+let onMessageListeners = [];
+const runtime = {
   id: 'mocked_id',
   connect: jest.fn(function ({ name }) {
     return {
@@ -50,3 +50,5 @@ export const runtime = {
   openOptionsPage: jest.fn(),
   getManifest: jest.fn(() => ({})),
 };
+
+module.exports = { onMessageListeners, runtime };

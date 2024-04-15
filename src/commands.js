@@ -1,6 +1,6 @@
 // https://developer.chrome.com/extensions/commands
 
-export const commands = {
+const commands = {
   getAll: jest.fn((cb) => {
     if (cb !== undefined) {
       return cb();
@@ -11,3 +11,5 @@ export const commands = {
     addListener: jest.fn(),
   },
 };
+
+module.exports = { commands };
