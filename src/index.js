@@ -1,17 +1,17 @@
-import { omnibox } from './omnibox';
-import { tabs } from './tabs';
-import { runtime } from './runtime';
-import { storage } from './storage';
-import { browserAction } from './browserAction';
-import { commands } from './commands';
-import { notifications } from './notifications';
-import { i18n } from './i18n';
-import { webNavigation } from './webNavigation';
-import { extension } from './extension';
-import { downloads } from './downloads';
+const { omnibox } = require('./omnibox');
+const { tabs } = require('./tabs');
+const { runtime } = require('./runtime');
+const { storage } = require('./storage');
+const { browserAction } = require('./browserAction');
+const { commands } = require('./commands');
+const { notifications } = require('./notifications');
+const { i18n } = require('./i18n');
+const { webNavigation } = require('./webNavigation');
+const { extension } = require('./extension');
+const { downloads } = require('./downloads');
 
 // Firefox specific API
-import { geckoProfiler } from './geckoProfiler';
+const { geckoProfiler } = require('./geckoProfiler');
 
 const chrome = {
   omnibox,
@@ -28,4 +28,4 @@ const chrome = {
   downloads,
 };
 
-export { chrome };
+module.exports = { chrome };

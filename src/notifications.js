@@ -18,7 +18,7 @@ const create = (notificationId, options, cb) => {
   return cbOrPromise(cb, notificationId);
 };
 
-export const notifications = {
+const notifications = {
   create: jest.fn(create),
   update: jest.fn((notificationId, options, cb) => cbOrPromise(cb, true)),
   clear: jest.fn((notificationId, cb) => cbOrPromise(cb, true)),
@@ -40,3 +40,5 @@ export const notifications = {
     addListener: jest.fn(),
   },
 };
+
+module.exports = { notifications };

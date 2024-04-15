@@ -6,7 +6,7 @@ const cbOrPromise = (cb, value) => {
   return Promise.resolve(value);
 };
 
-export const downloads = {
+const downloads = {
   acceptDanger: jest.fn((downloadId, cb) => cbOrPromise(cb)),
   cancel: jest.fn((downloadId, cb) => cbOrPromise(cb)),
   download: jest.fn((options, cb) => cbOrPromise(cb)),
@@ -21,3 +21,5 @@ export const downloads = {
   show: jest.fn(),
   showDefaultFolder: jest.fn(),
 };
+
+module.exports = { downloads };
