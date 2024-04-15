@@ -5,13 +5,13 @@
 For yarn:
 
 ```bash
-yarn add --dev @serh11p/jest-webextension-mock
+yarn add --dev @temple-wallet/jest-webextension-mock
 ```
 
 For npm:
 
 ```bash
-npm i --save-dev @serh11p/jest-webextension-mock
+npm i --save-dev @temple-wallet/jest-webextension-mock
 ```
 
 ## Setup
@@ -23,7 +23,7 @@ In your `package.json` under the `jest` section add the `setupFiles` attribute w
 ```json
 "jest": {
   "setupFiles": [
-    "@serh11p/jest-webextension-mock"
+    "@temple-wallet/jest-webextension-mock"
   ]
 }
 ```
@@ -35,7 +35,7 @@ Alternatively you can create a new setup file and require this module.
 `__setups__/chrome.js`
 
 ```js
-require('@serh11p/jest-webextension-mock');
+require('@temple-wallet/jest-webextension-mock');
 ```
 
 And add that file to your `setupFiles`:
