@@ -3,6 +3,6 @@
  * from the package.json file.  This allows developers to
  * directly call the module in their `setupFiles` property.
  */
-import { chrome } from './';
+const { chrome } = require('./index');
 
 global.chrome = chrome;

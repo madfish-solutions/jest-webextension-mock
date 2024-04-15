@@ -1,4 +1,4 @@
-export const geckoProfiler = {
+const geckoProfiler = {
   stop: jest.fn(() => Promise.resolve()),
   start: jest.fn(() => Promise.resolve()),
   pause: jest.fn(() => Promise.resolve()),
@@ -10,3 +10,5 @@ export const geckoProfiler = {
     addListener: jest.fn(),
   },
 };
+
+module.exports = { geckoProfiler };

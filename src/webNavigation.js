@@ -1,4 +1,4 @@
-export const webNavigation = {
+const webNavigation = {
   onCompleted: {
     addListener: jest.fn(),
   },
@@ -6,3 +6,5 @@ export const webNavigation = {
     addListener: jest.fn(),
   },
 };
+
+module.exports = { webNavigation };

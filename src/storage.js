@@ -19,7 +19,7 @@ function resolveKey(key) {
   throw new Error('Wrong key given');
 }
 
-export const storage = {
+const storage = {
   sync: {
     get: jest.fn((id, cb) => {
       const result = id === null ? store : resolveKey(id);
@@ -137,3 +137,5 @@ export const storage = {
     hasListener: jest.fn(),
   },
 };
+
+module.exports = { storage };

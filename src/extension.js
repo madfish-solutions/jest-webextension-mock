@@ -1,3 +1,5 @@
-export const extension = {
+const extension = {
     getURL: jest.fn(),
 };
+
+module.exports = { extension };

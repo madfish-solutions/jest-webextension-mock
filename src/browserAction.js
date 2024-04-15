@@ -4,7 +4,7 @@ const getDetails = (details, cb) => {
   }
   return Promise.resolve();
 };
-export const browserAction = {
+const browserAction = {
   setTitle: jest.fn(),
   getTitle: jest.fn(getDetails),
   setIcon: jest.fn(getDetails),
@@ -20,3 +20,5 @@ export const browserAction = {
     addListener: jest.fn(),
   },
 };
+
+module.exports = { browserAction };

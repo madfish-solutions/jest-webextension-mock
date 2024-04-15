@@ -1,7 +1,7 @@
 // https://developer.chrome.com/extensions/tabs
-import { onMessageListeners } from './runtime';
+const { onMessageListeners } = require('./runtime');
 
-export const tabs = {
+const tabs = {
   get: jest.fn((id = '', cb = () => {}) => cb({})),
   getCurrent: jest.fn((cb) => cb({})),
   connect: jest.fn((id = '', info = {}) => {
@@ -54,3 +54,5 @@ export const tabs = {
   }),
   reload: jest.fn((tabId, reloadProperties, cb) => cb()),
 };
+
+module.exports = { tabs };
